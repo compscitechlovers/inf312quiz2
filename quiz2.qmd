@@ -1,0 +1,17 @@
+---
+title: "sagith_quiz2"
+format: html
+editor: visual
+---
+
+```{r}
+gitcreds::gitcreds_set()
+```
+
+```{r}
+midwest |>  
+  ggplot(aes(x = poptotal, y = popdensity, color = state)) +   
+  geom_point() +   
+  scale_x_log10() +   
+  scale_y_log10()
+```
